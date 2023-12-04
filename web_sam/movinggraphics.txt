@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head> Moving Shapes </head>
+<title> Advanced Graphics </title>
+
+<body>
+<h1> Motion With Shapes </h1>
+
+<h3> Shooting </h3>
+  <svg width='400' height='200'>
