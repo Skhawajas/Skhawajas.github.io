@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> </title>
+ </head>
+ 
+ <style>
+  #map {
+  height: 100%;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+</style>
+
+<body>
+  <div id="map"> </div>
+  <h1> My first marker on the map </h1>
+  
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default">
+	</script>      
+	<script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+      defer>
+	 </script>
+	 
+<script>
+    function initMap() {
+	const myLatLng = { lat : 41.988, lng : -87.7011 };
+	const map = new google.maps.Map( document.getElementById("map"), {
+	zoom: 16,
+	center: myLatLng, });
+	
+	new google.maps.Marker({
+	position: myLatLng,
+	map,
+	title:"school",
+	});
+	}
+	window.initMap = initMap;
+	
+	function initMap() {
+	const myLatLng = { lat : 28.554739910987646, lng : -81.41503081704047 };
+	const map = new google.maps.Map( document.getElementById("map"), {
+	zoom: 16,
+	center: myLatLng, });
+	
+	new google.maps.Marker({
+	position: myLatLng,
+	map,
+	title:"lotte",
+	});
+	}
+	window.initMap = initMap;
+	
+	function initMap() {
+	const myLatLng = { lat : 41.88296540496358, lng : -87.62330477051312 };
+	const map = new google.maps.Map( document.getElementById("map"), {
+	zoom: 16,
+	center: myLatLng, });
+	
+	new google.maps.Marker({
+	position: myLatLng,
+	map,
+	title:"bean",
+	});
+	}
+	window.initMap = initMap;
+	</script>
+	</body>
+	</html>
